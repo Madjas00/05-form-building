@@ -73,8 +73,8 @@ articleView.setTeasers = () => {
   });
 };
 
-// COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// COM/MENT: Where is this function called? Why?
+// This function is being called on our new.html file. It is called there so that we can make the page function.
 articleView.initNewArticlePage = () => {
   // TO/DO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
   $('nav .tab[data-content="write"]').click();
@@ -122,8 +122,8 @@ articleView.create = () => {
   $('#article-json').val(JSON.stringify(articleDataObj) + ',');
 };
 
-// COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// COM/MENT: Where is this function called? Why?
+// This function is called on the index.html. It is called on that page so that every function can be loaded for the page and it keeps it cleaner by putting all the functions being called in one function on the html pages.
 articleView.initIndexPage = () => {
   articles.forEach(article => $('#articles').append(article.toHtml()));
   articleView.populateFilters();
